@@ -12,6 +12,7 @@ import javax.inject.Inject;
 public class MainActivity extends AppCompatActivity {
 
     @Inject NonScopedService mNonScopedService;
+    @Inject SingletonScopedService mSingletonScopedService;
 
     private TutorialComponent mTutorialComponent;
 

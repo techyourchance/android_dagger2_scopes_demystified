@@ -5,9 +5,6 @@ package com.techyourchance.www.dagger2tutorial;
  */
 public class NonScopedService {
 
-
-    public NonScopedService() {
-
-    }
+    public NonScopedService() {}
 
 }
