@@ -1,7 +1,7 @@
 package com.techyourchance.www.dagger2tutorial.dependencyinjection;
 
+import com.techyourchance.www.dagger2tutorial.CustomScopedService;
 import com.techyourchance.www.dagger2tutorial.NonScopedService;
-import com.techyourchance.www.dagger2tutorial.SingletonScopedService;
 
 import javax.inject.Singleton;
 
@@ -17,9 +17,10 @@ public class TutorialModule {
     }
 
     @Provides
-    @Singleton
-    public SingletonScopedService singletonScopedService() {
-        return new SingletonScopedService();
+    @CustomScope
+    public CustomScopedService customScopedService() {
+        return new CustomScopedService();
     }
+
 
 }

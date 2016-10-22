@@ -7,7 +7,7 @@ import javax.inject.Singleton;
 
 import dagger.Component;
 
-@Singleton
+@CustomScope
 @Component(modules = {TutorialModule.class})
 public interface TutorialComponent {
 
